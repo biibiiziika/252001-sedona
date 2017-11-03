@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Christina Kovalchuk](https://up.htmlacademy.ru/htmlcss/19/user/252001).
-* Наставник: `Неизвестно`.
+* Наставник: [Никита Рогатнев](https://up.htmlacademy.ru/htmlcss/19/user/86119).
 
 ---
 
