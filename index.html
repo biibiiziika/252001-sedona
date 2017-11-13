@@ -79,24 +79,28 @@
   			<h2>заинтересовались?</h2>
   			<p>укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
   			<img src="img/back-map.jpg" width="1200" height="594" alt="Карта">
-  			<form class="" action="" method="post">
-          <p class="">
-            <label for="date">Дата заезда</label>
-            <input id="-date" type="text" name="date" value="" placeholder="24 апреля 2017">
+  			<form class="form--search" action="" method="post">
+          <p class="form--item__large">
+            <label for="form--date__check-in">Дата заезда</label>
+            <input id="form--date__check-in" type="text" name="date-check-in" value="" placeholder="24 апреля 2017">
           </p>
-          <p class="">
-            <label for="date">Дата выезда</label>
-            <input id="-date" type="text" name="date" value="" placeholder="4 июля 2017">
+          <p class="form--item__large">
+            <label for="form--date__check-out">Дата выезда</label>
+            <input id="form--date__check-out" type="text" name="date-check-out" value="" placeholder="4 июля 2017">
           </p>
-          <p class="">
-            <label for="date">Взрослые</label>
-            <input id="-date" type="text" name="date" value="" placeholder="2">
+          <p class="form--item__small">
+            <label for="form--age__adults">Взрослые</label>
+            <button class="button button__small button__secondary">-</button>
+            <input id="form--age__adults" type="text" name="age-adults" value="" placeholder="2">
+            <button class="button button__small button__secondary">+</button>
           </p>
-          <p class="">
-            <label for="date">Дети</label>
-            <input id="-date" type="text" name="date" value="" placeholder="2">
+          <p class="form--item__small">
+            <label for="form--age__children">Дети</label>
+            <button class="button button__small button__secondary">-</button>
+            <input id="form--age__children" type="text" name="age-children" value="" placeholder="2">
+            <button class="button button__small button__secondary">+</button>
           </p>
-          <button class="button" type="submit">Найти</button>
+          <button class="button button__large button__primary" type="submit">Найти</button>
         </form>
   		</section>
   	</main>	

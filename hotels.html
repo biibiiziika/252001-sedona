@@ -19,7 +19,36 @@
   	<main class="container">
       <section class="filters--form">
         <h2 class="hidden">Фильтр гостиниц</h2>
-        <!-- Здесь будет форма -->
+        <form>
+          <fieldset>
+            <legend>Инфраструктура:</legend>
+              <input type="checkbox" name="form--pool" id="form--pool" checked>
+              <label for="form--pool">Бассейн</label>
+              <input type="checkbox" name="form--parking" id="form--parking">
+              <label for="form--parking">Парковка</label>
+              <input type="checkbox" name="form--wi-fi" id="form--wi-fi">
+              <label for="form--wi-fi">WI-FI</label>
+          </fieldset>
+          <fieldset>
+            <legend>Тип жилья:</legend>
+              <input type="checkbox" name="form--hotel" id="form--hotel" checked>
+              <label for="form--hotel">Гостиница</label>
+              <input type="checkbox" name="form--motel" id="form--motel" checked>
+              <label for="form--motel">Мотель</label>
+              <input type="checkbox" name="form--apartments" id="form--apartments" checked>
+              <label for="form--apartments">Апартаменты</label>
+          </fieldset>
+          <fieldset>
+            <legend>Стоимость в сутки(Р):</legend>
+              <label for="form--price" hidden>Стоимость в сутки(Р):</label>
+              <div class="form--range__numbers">
+                <p>от 0</p>
+                <p>до 3000</p>
+              </div>
+              <input type=range id="form--price" min=0 max=3000 step=100>
+          </fieldset>
+          <button class="button button__small button__ghost" type="submit">Показать</button>
+        </form>
       </section>
       <section>
         <div class="text--h2"><h2>найдено:3</h2></div>
