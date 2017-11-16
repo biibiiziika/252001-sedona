@@ -49,15 +49,21 @@ table {
 
 // Стилизация моя
 
-// @font-face {
-//  font-family: "PT Sans Normal";
-//  src: url("../fonts/PTS55F_W.woff") format("woff");
-// }
+@font-face {
+font-family: 'PT Sans'; 
+font-style: normal;
+font-weight: normal;
+src: url('../fonts/ptsans.woff2') format('woff2'),
+src: url('../fonts/ptsans.woff') format('woff');
+}
 
-// @font-face {
-//  font-family: "PT Sans Bold";
-//  src: url("../fonts/PTS75F_W.woff") format("woff");
-// }
+@font-face {
+font-family: "PT Sans";
+font-style: normal;
+font-weight: bold;
+src: url("../fonts/ptsansbold.woff2") format("woff2"),
+src: url("../fonts/ptsansbold.woff") format("woff");
+}
 
 body {
   font-family: "PT Sans", sans-serif;
