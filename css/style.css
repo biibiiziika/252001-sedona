@@ -120,20 +120,6 @@ h1, h2 {
   border-radius: 0;
 }
 
-.button__secondary {
-  background-color: #eeeeee;
-  color: #a9a9a9;
-}
-
-.button__secondary:hover,
-.button__secondary:focus {
-  color: #000000;
-}
-
-.button__secondary:active {
-  color: #81b3d2;
-}
-
 .button__primary {
   background-color: #81b3d2;
   color: white;
@@ -149,17 +135,6 @@ h1, h2 {
   color: #88b6d1;
 }
 
-.button__ghost {
-  background: none;
-  border: 2px solid white;
-  color: white; 
-}
-
-.button__ghost:hover {
-  background: white;
-  color: black;
-}
-
 .button__secondary {
   background: #766357;
   color: white;
@@ -173,6 +148,31 @@ h1, h2 {
 .button__secondary:active {
   background: #503e33;
   color: #857871;
+}
+
+.button__ghost {
+  background: none;
+  border: 2px solid white;
+  color: white; 
+}
+
+.button__ghost:hover {
+  background: white;
+  color: black;
+}
+
+.button__form {
+  background-color: #eeeeee;
+  color: #a9a9a9;
+}
+
+.button__form:hover,
+.button__form:focus {
+  color: #000000;
+}
+
+.button__form:active {
+  color: #81b3d2;
 }
 
 .form--search input {
