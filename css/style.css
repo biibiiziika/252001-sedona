@@ -66,6 +66,8 @@ src: url("../fonts/ptsansbold.woff") format("woff");
 }
 
 body {
+  margin: 0;
+  padding: 0;
   font-family: "PT Sans", sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -74,8 +76,163 @@ body {
   color: black;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
+
+.main--navigation a:hover,
+.main--navigation a:focus {
+  color: #81b3d2;
+}
+
+.main--navigation a:active {
+  color: #b2b2b2;
+}
+
 h1, h2 {
   font-size: 21px;
   font-weight: 700;
 }
+
+.main--item,
+.main--item__text,
+.main--item__icon,
+.main--item__number {
+  text-align: center;
+}
+.main--item__invert {
+  background-color: #81b3d2;
+  color: white;
+}
+
+.main--item__back-grey {
+  background-color: #eeeeee;
+}
+
+.button {
+  font: inherit;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 0;
+}
+
+.button__secondary {
+  background-color: #eeeeee;
+  color: #a9a9a9;
+}
+
+.button__secondary:hover,
+.button__secondary:focus {
+  color: #000000;
+}
+
+.button__secondary:active {
+  color: #81b3d2;
+}
+
+.button__primary {
+  background-color: #81b3d2;
+  color: white;
+}
+
+.button__primary:hover,
+.button__primary:focus {
+  background-color: #669ec0;
+}
+
+.button__primary:active {
+  background-color: #5496bd;
+  color: #88b6d1;
+}
+
+.button__ghost {
+  background: none;
+  border: 2px solid white;
+  color: white; 
+}
+
+.button__ghost:hover {
+  background: white;
+  color: black;
+}
+
+.button__secondary {
+  background: #766357;
+  color: white;
+}
+
+.button__secondary:hover {
+  background: #604e43;
+  color: white;
+}
+
+.button__secondary:active {
+  background: #503e33;
+  color: #857871;
+}
+
+.form--search input {
+  font: inherit;
+  background-color: #f2f2f2;
+  border: 2px solid #f2f2f2; 
+}
+
+.form--search input:hover {
+  background-color: #ebebeb;
+}
+
+.form--search input:focus {
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5; 
+  outline: none;
+}
+
+.main--footer__social {
+  text-align: center;
+}
+
+.main--footer__copyright {
+  text-align: center;
+}
+
+.filters--form {
+  background: url(../img/filter-background.jpg) 50% 50% no-repeat;
+  color: white;
+}
+
+.filters--sort__item a {
+  color: #b2b2b2;
+  text-decoration: underline dotted #81b3d2;    
+}
+
+.filters--sort__item a:hover {
+  color: #81b3d2; 
+}
+
+.filters--sort__item a:active {
+  color: black;
+  text-decoration: none;
+}
+
+.sort--state__active a {
+  color: #81b3d2; 
+  text-decoration: none;
+}
+
+.catalog--item__description h1 a:hover {
+  color: #81b3d2; 
+}
+
+.catalog--item__description h1 a:active {
+  color: #b2b2b2; 
+}
+
+
+
+
+
 
