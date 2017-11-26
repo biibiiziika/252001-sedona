@@ -3,19 +3,7 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -24,8 +12,7 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block;
 }
 body {
@@ -37,8 +24,7 @@ ol, ul {
 blockquote, q {
   quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+blockquote:before, blockquote:after, q:before, q:after {
   content: '';
   content: none;
 }
@@ -47,7 +33,7 @@ table {
   border-spacing: 0;
 }
 
-// Стилизация моя
+/* ---- ---- ---- Стилизация моя ---- ---- ---- */
 
 @font-face {
 font-family: 'PT Sans'; 
@@ -107,8 +93,8 @@ h1, h2 {
   color: white;
 }
 
-.main--item__back-grey {
-  background-color: #eeeeee;
+.background__grey {
+  background-color: rgba(0,0,0,0.05);
 }
 
 .button {
@@ -120,6 +106,9 @@ h1, h2 {
   border-radius: 0;
 }
 
+.button__large {
+	height: 60px;
+}
 .button__primary {
   background-color: #81b3d2;
   color: white;
@@ -232,7 +221,149 @@ h1, h2 {
 }
 
 
+/* ---- ---- ---- сетка ---- ---- ---- */
 
+/* ---- подкладка ---- */
+// body {
+//   background: url(../img/sedona-whole.png) 50% 0;
+//   background-size: 1200px auto;
+//   background-repeat: no-repeat;
+//   min-height: 2800px;
+// }
 
+.wrapper--general {
+  width: 1200px;
+  margin: 0 auto;  
+}
 
+.main--header {
+  display: flex;
+  height: 60px;
+}
 
+.wrapper--nav {
+  width: 1200px;
+}
+
+.main--navigation {
+  display: flex;
+  width: 100%;
+}
+
+.main--navigation__logo {
+  width: 138px;
+  height: 70px;
+  position: absolute;
+  left: 50%;
+  margin-left: -69px; 
+}
+
+.main--navigation li {
+  width : 245px; 
+  height: 60px; 
+}
+.main--navigation li:nth-child(2) {
+  margin-right: auto;
+}
+
+.wrapper--main {
+  min-height: 2580px;
+}
+
+.main--hero-image {
+  width: 100%;
+  height: 510px;
+}
+
+.main--item__image {
+  width: 100%;
+  height: 255px;
+  display: flex;
+}
+
+.main--item__list {
+  width: 100%;
+  min-height: 250px;	
+  display: flex;
+}
+
+.main--item__number {
+	width: 33.333%;
+	min-height: 150px;
+}
+
+.image__two-third {
+	width: 66.666%;
+	height: 100%;
+}
+
+.main--item__text {
+  width: 100%;
+  min-height: 210px;
+}
+
+.main--item__icon {
+	width: 33.333%;
+	height: 335px;
+}
+
+.main--item__form {
+	width: 100%;
+	height: 470px;
+	padding-top: 85px;
+	background: url(../img/back-map.jpg) 0px 85px no-repeat;
+}
+
+.wrapper--form {
+	width: 570px;
+	height: 480px;
+	margin-top: -85px;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.main--item__form h2 {
+	width: 100%;
+	height: 85px;
+/*	background: #766357;*/
+}
+
+.form--search {
+	padding: 55px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.form--item__large {
+	width: 100%;
+	height: 40px;
+	background: rgba(0,255,0,0.3);
+	margin-bottom: 25px;
+}
+
+.form--item__small {
+	width: 220px;
+	height: 40px;
+	background: rgba(0,255,0,0.3);
+	margin-bottom: 25px;
+}
+
+.form--search button {
+	width: 100%;
+	margin-top: 25px;
+}
+.main--footer {
+  display: flex;
+  height: 120px;
+	justify-content: space-evenly;
+}
+
+.main--footer__hashtag,
+.main--footer__social,
+.main--footer__copyright {
+	height: 100%;
+	width: 300px;
+}
