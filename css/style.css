@@ -77,7 +77,12 @@ a {
   color: #b2b2b2;
 }
 
-h1, h2 {
+h1 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+h2 {
   font-size: 21px;
   font-weight: 700;
 }
@@ -95,6 +100,8 @@ h1, h2 {
 
 .background__grey {
   background-color: rgba(0,0,0,0.05);
+  /*padding: 20px 0; правильные*/
+  padding: 12px 0 19px 0;
 }
 
 .button {
@@ -240,7 +247,6 @@ h1, h2 {
 
 .wrapper--header {
   display: flex;
-  height: 60px;
 }
 
 .wrapper--main {
@@ -263,8 +269,10 @@ h1, h2 {
 
 .main--navigation li {
   width : 245px; 
-  height: 60px; 
+  padding-top: 15px;
+  padding-bottom: 15px; 
 }
+
 .main--navigation li:nth-child(2) {
   margin-right: auto;
 }
@@ -275,36 +283,55 @@ h1, h2 {
   height: 510px;
 }
 
+.main--item__text {
+  padding: 60px 330px 60px 330px;
+}
+
+.main--item__text h1 {
+  margin-bottom: 30px;
+}
+
+.main--item__text h2 {
+  margin-bottom: 30px;
+}
+
 .main--item__image {
   width: 100%;
-  height: 255px;
   display: flex;
+  height: 255px;
 }
 
 .main--item__list {
-  width: 100%;
-  min-height: 250px;	
+  width: 100%;	
   display: flex;
 }
 
 .main--item__number {
 	width: 33.333%;
-	min-height: 150px;
+	padding: 40px 60px 30px 60px;
+}
+
+.main--item__number h2 {
+  margin-bottom: 20px;
+}
+
+.main--item__number p {
+  margin-top: 20px;
 }
 
 .image__two-third {
 	width: 66.666%;
-	height: 100%;
 }
 
-.main--item__text {
-  width: 100%;
-  min-height: 210px;
-}
 
 .main--item__icon {
 	width: 33.333%;
-	height: 335px;
+	padding: 50px 50px 70px 50px;
+}
+
+.main--item__icon img, 
+.main--item__icon h2 {
+  margin-bottom: 20px;
 }
 
 .main--item__form {
@@ -366,7 +393,7 @@ h1, h2 {
 /*футер*/
 .wrapper--footer {
   display: flex;
-  height: 120px;
+  padding: 25px 0 35px 0;
 	justify-content: space-around;
 }
 
@@ -386,7 +413,8 @@ h1, h2 {
 
 .filters--form {
   width: 100%;
-  height: 215px;
+  padding: 30px 0px 30px;
+  height: 160px; /* временный */
 }
 
 .filters--form form fieldset {
@@ -401,10 +429,7 @@ h1, h2 {
 }
 
 .search--result__header {
-  padding-left: 70px;
-  padding-right: 70px;
-/*  width: 100%;*/
-  height: 85px;
+  padding: 30px 70px;
   display: flex;
 }
 
@@ -443,7 +468,7 @@ h1, h2 {
 
 .catalog--item {
   display: flex;
-  height: 150px; 
+  padding: 30px 0 25px; 
 }
 
 .catalog--item__image {
