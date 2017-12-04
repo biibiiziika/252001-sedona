@@ -1,38 +1,64 @@
 /* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
+	v2.0 | 20110126
+	License: none (public domain)
 */
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-  display: block;
+	display: block;
 }
 body {
-  line-height: 1;
+	line-height: 1;
 }
 ol, ul {
-  list-style: none;
+	list-style: none;
 }
 blockquote, q {
-  quotes: none;
+	quotes: none;
 }
 blockquote:before, blockquote:after, q:before, q:after {
-  content: '';
-  content: none;
+	content: '';
+	content: none;
 }
 table {
-  border-collapse: collapse;
-  border-spacing: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
+
+/* ---- ---- ---- подкладка ---- ---- ---- */
+
+.coverrr--index {
+	background: url(../img/sedona-whole.png) 50% 15px;
+	background-size: 1200px auto;
+	background-repeat: no-repeat;
+	min-height: 2800px;
+	width: 100%;
+	opacity: 0.2;
+	position: absolute;
+	top: 0px;
+	left: 0;
+}
+
+.coverrr--hotels {
+	background: url(../img/sedona-hotels-1200.png) 50% 0;
+	background-size: 1200px auto;
+	background-repeat: no-repeat;
+	min-height: 2800px;
+	width: 100%;
+	opacity: 0.2;
+	position: absolute;
+	top: 0px;
+	left: 0;
+}
 /* ---- ---- ---- Стилизация моя ---- ---- ---- */
 
 @font-face {
@@ -52,258 +78,228 @@ src: url("../fonts/ptsansbold.woff") format("woff");
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  font-family: "PT Sans", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-  text-transform: uppercase;
-  color: black;
+	margin: 0;
+	padding: 0;
+	font-family: "PT Sans", sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 24px;
+	text-transform: uppercase;
+	color: black;
+	background-color: #f2f2f2;
 }
 
 a {
-  text-decoration: none;
-  color: black;
+	text-decoration: none;
+	color: black;
 }
-
 
 .main--navigation a:hover,
 .main--navigation a:focus {
-  color: #81b3d2;
+	color: #81b3d2;
 }
 
 .main--navigation a:active {
-  color: #b2b2b2;
+	color: #b2b2b2;
 }
 
 h1 {
-  font-size: 30px;
-  font-weight: 700;
+	font-size: 30px;
+	font-weight: 700;
 }
 
 h2 {
-  font-size: 21px;
-  font-weight: 700;
+	font-size: 21px;
+	font-weight: 700;
 }
 
+h3 {
+	font-size: 16px;
+	line-height: 21px;
+	font-weight: bold;
+}
 .main--item,
 .main--item__text,
 .main--item__icon,
 .main--item__number {
-  text-align: center;
+	text-align: center;
 }
+
 .main--item__invert {
-  background-color: #81b3d2;
-  color: white;
+	background-color: #81b3d2;
+	color: white;
 }
 
 .background__grey {
-  background-color: rgba(0,0,0,0.05);
-  /*padding: 20px 0; правильные*/
-  padding: 12px 0 19px 0;
+	background-color: rgba(0,0,0,0.05);
+	padding: 12px 0 19px 0;
 }
 
 .button {
-  font: inherit;
-  text-align: center;
-  vertical-align: middle;
-  text-transform: uppercase;
-  border: none;
-  border-radius: 0;
+	font: inherit;
+	text-align: center;
+	vertical-align: middle;
+	text-transform: uppercase;
+	border: none;
+	border-radius: 0;
+}
+
+.button__plus-minus {
+	height: 38px;
 }
 
 .button__large {
 	height: 60px;
 }
+
+.button__meduim {
+	padding: 8px 32px;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.button__small {
+	padding: 4px 16px;
+	font-size: 14px;
+	line-height: 20px;
+}
+
 .button__primary {
-  background-color: #81b3d2;
-  color: white;
+	background-color: #81b3d2;
+	color: white;
 }
 
 .button__primary:hover,
 .button__primary:focus {
-  background-color: #669ec0;
+	background-color: #669ec0;
 }
 
 .button__primary:active {
-  background-color: #5496bd;
-  color: #88b6d1;
+	background-color: #5496bd;
+	color: #88b6d1;
 }
 
 .button__secondary {
-  background: #766357;
-  color: white;
+	background: #766357;
+	color: white;
 }
 
 .button__secondary:hover {
-  background: #604e43;
-  color: white;
+	background: #604e43;
+	color: white;
 }
 
 .button__secondary:active {
-  background: #503e33;
-  color: #857871;
+	background: #503e33;
+	color: #857871;
 }
 
 .button__ghost {
-  background: none;
-  border: 2px solid white;
-  color: white; 
+	background: none;
+	border: 2px solid white;
+	color: white; 
 }
 
 .button__ghost:hover {
-  background: white;
-  color: black;
+	background: white;
+	color: black;
 }
 
-.button__form {
-  background-color: #eeeeee;
-  color: #a9a9a9;
+.hidden:not(:focus):not(:active),
+input[type="checkbox"].hidden,
+input[type="radio"].hidden {
+	position: absolute;
+
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+
+	white-space: nowrap;
+
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
 }
 
-.button__form:hover,
-.button__form:focus {
-  color: #000000;
-}
+/* ---- ---- ---- врапперы ---- ---- ---- */
 
-.button__form:active {
-  color: #81b3d2;
-}
-
-.form--search input {
-  font: inherit;
-  background-color: #f2f2f2;
-  border: 2px solid #f2f2f2; 
-}
-
-.form--search input:hover {
-  background-color: #ebebeb;
-}
-
-.form--search input:focus {
-  background-color: #ffffff;
-  border: 2px solid #e5e5e5; 
-  outline: none;
-}
-
-.main--footer__social {
-  text-align: center;
-}
-
-.main--footer__copyright {
-  text-align: center;
-}
-
-.filters--form {
-/*  background: url(../img/filter-background.jpg) 50% 50% no-repeat; */
-  color: white;
-}
-
-.filters--sort__item a {
-  color: #b2b2b2;
-  text-decoration: underline dotted #81b3d2;    
-}
-
-.filters--sort__item a:hover {
-  color: #81b3d2; 
-}
-
-.filters--sort__item a:active {
-  color: black;
-  text-decoration: none;
-}
-
-.sort--state__active a {
-  color: #81b3d2; 
-  text-decoration: none;
-}
-
-.catalog--item__description h1 a:hover {
-  color: #81b3d2; 
-}
-
-.catalog--item__description h1 a:active {
-  color: #b2b2b2; 
-}
-
-.hidden {
-  display: none;
-}
-
-/* подкладка */
-/*body {
-   background: url(../img/sedona-hotels-1200.png) 50% 0;
-   background-size: 1200px auto;
-   background-repeat: no-repeat;
-   min-height: 2800px;
-}*/
-
-/* тут лежат обложки*/
 .wrapper--general {
-  width: 1200px;
-  margin: 0 auto;  
+	width: 1200px;
+	margin: 0 auto;	
+	background-color: white;
+	-webkit-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.2);
+	box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.2);
 }
 
 .wrapper--header {
-  display: flex;
+	display: flex;
+	background-color: white;
 }
 
-.wrapper--main {
-/*  min-height: 2580px; */
-}
+/* ---- ---- ---- навигация ---- ---- ---- */
 
-/*навигация*/
 .main--navigation {
-  display: flex;
-  width: 1200px;
+	display: flex;
+	width: 1060px;
+	padding: 0 70px;
+	text-align: center;
+	justify-content: space-between;
 }
 
 .main--navigation__logo {
-  width: 138px;
-  height: 70px;
-  position: absolute;
-  left: 50%;
-  margin-left: -69px; 
+	width: 138px;
+	height: 70px;
+	position: absolute;
+	left: 50%;
+	margin-left: -69px; 
 }
 
 .main--navigation li {
-  width : 245px; 
-  padding-top: 15px;
-  padding-bottom: 15px; 
+	padding-top: 15px;
+	padding-bottom: 15px; 
+	font-weight: bold;
 }
 
 .main--navigation li:nth-child(2) {
-  margin-right: auto;
+	margin-right: 260px;
 }
 
-/*главная*/
+.navigation__active a {
+	color: #766357;
+}
+
+/*---- ---- ---- главная ---- ---- ---- */
+
 .main--hero-image {
-  width: 100%;
-  height: 510px;
+	width: 100%;
+	height: 510px;
+	background: url(../img/cover.jpg) 50% 100% no-repeat; 
 }
 
 .main--item__text {
-  padding: 60px 330px 60px 330px;
+	padding: 60px 330px 60px 330px;
 }
 
 .main--item__text h1 {
-  margin-bottom: 30px;
+	margin-bottom: 30px;
 }
 
 .main--item__text h2 {
-  margin-bottom: 30px;
+	margin-bottom: 30px;
 }
 
 .main--item__image {
-  width: 100%;
-  display: flex;
-  height: 255px;
+	width: 100%;
+	display: flex;
+	height: 255px;
 }
 
 .main--item__list {
-  width: 100%;	
-  display: flex;
+	width: 100%;	
+	display: flex;
 }
 
 .main--item__number {
@@ -312,17 +308,16 @@ h2 {
 }
 
 .main--item__number h2 {
-  margin-bottom: 20px;
+	margin-bottom: 20px;
 }
 
 .main--item__number p {
-  margin-top: 20px;
+	margin-top: 20px;
 }
 
 .image__two-third {
 	width: 66.666%;
 }
-
 
 .main--item__icon {
 	width: 33.333%;
@@ -331,8 +326,10 @@ h2 {
 
 .main--item__icon img, 
 .main--item__icon h2 {
-  margin-bottom: 20px;
+	margin-bottom: 20px;
 }
+
+/*	---- ---- ---- форма	поиска главная ---- ---- ---- */
 
 .main--item__form {
 	width: 100%;
@@ -343,46 +340,115 @@ h2 {
 
 .wrapper--form {
 	width: 570px;
-	height: 480px;
 	margin-top: -85px;
 	margin-left: auto;
 	margin-right: auto;
 	display: flex;
 	flex-direction: column;
+	-webkit-box-shadow: 0px 7px 15px 0px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 7px 15px 0px rgba(0,0,0,0.2);
+	box-shadow: 0px 7px 15px 0px rgba(0,0,0,0.2);
 }
 
 .main--item__form h2 {
+	text-align: center;
+	padding-top: 30px;
 	width: 100%;
-	height: 85px;
-/*	background: #766357;*/
+	height: 55px;
+	color: #ffffff;
+	background: #766357;
+}
+
+.form--item__large,
+.form--item__small {
+	height: 38px;
+	margin-bottom: 25px;
+	display: flex;
+}
+
+.form--item__large {
+	width: 100%;
+}
+
+.form--item__large label {
+	width: 25%;
+	padding-top: 8px;
+}
+
+.form--item__large input {
+	width: 75%;
+	padding: 2px 12px;
+	box-sizing: border-box;
+	background: url(../img/svg/calendar.svg) 97% 50% no-repeat;
+}
+
+.form--item__small {
+	width: 50%;
+}
+
+.form--item__small label {
+	width: 50%;
+	padding-top: 8px;
+	box-sizing: border-box;
+}
+
+.extra__kids {
+	padding-right: 30px;
+	text-align: right;
+}
+
+.form--item__small input {
+	width: 16.667%;
+	text-align: center;
+	padding: 2px 0;
+	box-sizing: border-box;
 }
 
 .form--search {
 	padding: 55px;
+	background-color: #ffffff;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 }
 
-.form--item__large {
-	width: 100%;
-	height: 40px;
-	background: rgba(0,255,0,0.3);
-	margin-bottom: 25px;
-  display: flex;
+.form--search input {
+	font: inherit;
+	background-color: #f2f2f2;
+	border: 2px solid #f2f2f2; 
 }
 
-.form--item__small {
-	width: 220px;
-	height: 40px;
-	background: rgba(0,255,0,0.3);
-	margin-bottom: 25px;
-  display: flex;
+.form--search input:hover {
+	background-color: #ebebeb;
+	border: 2px solid #ebebeb;
+}
+
+.form--search input:focus {
+	background-color: #ffffff;
+	border: 2px solid #e5e5e5; 
+	outline: none;
+}
+.form--search * {
+	font-weight: bold;
+	color: #000000;
+	text-transform: uppercase;
 }
 
 .button__form {
-  height: 30px;
-  width: 30px;
+	width: 16.667%;
+	padding: 0px;
+	background-color: #f2f2f2;
+	font-size: 24px;
+	color: #a9a9a9;
+}
+
+.button__form:hover,
+.button__form:focus {
+	color: #000000;
+}
+
+.button__form:active {
+	color: #81b3d2;
 }
 
 .button__form--primary {
@@ -390,10 +456,11 @@ h2 {
 	margin-top: 25px;
 }
 
-/*футер*/
+/* ---- ---- ---- футер ---- ---- ---- */
+
 .wrapper--footer {
-  display: flex;
-  padding: 25px 0 35px 0;
+	display: flex;
+	padding: 35px 0;
 	justify-content: space-around;
 }
 
@@ -401,81 +468,266 @@ h2 {
 .main--footer__social,
 .main--footer__copyright {
 	height: 100%;
-	width: 300px;
+	width: 33.333%;
+	display: flex;
+	justify-content: space-around;
 }
 
-/*отели*/
-.filters--form form {
-  display: flex;
-  padding-left: 70px;
-  padding-right: 70px;
+.main--footer__hashtag {
+	padding-top: 15px;
+	font-size: 21px;
+	font-weight: bold;
 }
+
+.main--footer__social ul {
+	display: flex;
+	width: 155px;
+	margin: 0 auto;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.icon--social {
+	width: 48px;
+	height: 48px;
+	background: #81b3d2;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.icon--social:hover {
+	background: #669ec0;
+}
+
+.icon--social:active path {
+	fill: #88b6d1;
+}
+
+.main--footer__copyright a {
+	display: flex;
+	justify-content: space-between;
+	width: 200px;
+	align-items: center;
+	padding-top: 10px;
+}
+
+.main--footer__copyright:hover path {
+	fill: #81b3d2;
+}
+
+.main--footer__copyright:active path {
+	fill: #bdbbbc;
+}
+
+/* ---- ---- ---- отели фильтр ---- ---- ---- */
 
 .filters--form {
-  width: 100%;
-  padding: 30px 0px 30px;
-  height: 160px; /* временный */
+	width: 100%;
+	padding: 30px 0px;
+	background: url(../img/filter-background.jpg) 50% 50% no-repeat; 
+	color: white;
 }
 
 .filters--form form fieldset {
-  min-width: 255px;
-  display: flex;
-  flex-direction: column;
+	min-width: 255px;
+	display: flex;
+	flex-direction: column;
 }
 
-.filters--form form div {
-  margin-left: auto;
-  width: 320px;
+.filters--form form {
+	display: flex;
+	padding-left: 70px;
+	padding-right: 70px;
 }
 
-.search--result__header {
-  padding: 30px 70px;
-  display: flex;
+.filters--form form span {
+	margin-top: 22px;
+}
+
+.filters--form form span label {
+	padding-left: 20px;
+}
+
+.filters--form form input[type=checkbox] {
+	transform: scale(2);
+}
+
+.filters--slider__price {
+	margin-left: auto;
+	width: 320px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.form--range__numbers {
+	display: flex;
+	border: 2px solid #fff;
+	margin: 10px 0;
+	background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAAWCAYAAADq8U2pAAAAI0lEQVQImc3GsREAEAAAsXD2n5fqNYaQKqPaMKpgev7PwoELAxAJF/T33OIAAAAASUVORK5CYII=') 50% 50% no-repeat;
+}
+
+.form--range__numbers p {
+	width: 50%;
+	text-align: center;
+	padding: 4px 0;
+}
+
+.filters--slider__price input[type=range] {
+	height: 20px;
+	width: 320px;
+}
+
+.filters--slider__price button {
+	width: 135px;
+	border-radius: 2px;
 }
 
 .filters--sort,
 .filters--sort div,
 .filters--sort ul {
-  display: flex; 
+	display: flex; 
 }
 
 .filters--sort {
-  width: 1005px;
-  justify-content: space-between;
+	width: 1005px;
+	justify-content: space-between;
 }
 
-.wrapper--filter__arrows {
-  display: flex;
-  background: rgba(0,255,0,0.5);
-  width: 50px; 
+.filters--sort__item a {
+	color: #b2b2b2;
+	text-decoration: underline dotted #81b3d2;	
+}
+
+.filters--sort__item a:hover {
+	color: #81b3d2; 
+}
+
+.filters--sort__item a:active {
+	color: black;
+	text-decoration: none;
+}
+
+
+/* ---- ---- ---- сортировка выдачи ---- ---- ---- */
+
+.search--result__header {
+	padding: 30px 70px;
+	display: flex;
+	border-bottom: 1px solid #e5e5e5;
 }
 
 .text--h2 {
-  width: 185px;
+	width: 185px;
 }
 
-.filters--sort__title {
-  margin-right: 30px;
-}
-
+.filters--sort__title,
 .filters--sort__item {
-  margin-right: 30px;
+	margin-right: 30px;
 }
 
-.catalog {
-  padding: 0 70px; 
+.wrapper--filter__arrows {
+	width: 40px;
+	padding-top: 6px;
+	display: flex;
+	justify-content: space-between; 
 }
+
+.filters--sort__arrow-up,
+.filters--sort__arrow-down {
+	font-size: 12px;
+	line-height: 12px;
+	color: #cacaca;
+	border: none;
+	box-sizing: content-box;
+	padding: 2px;
+}
+
+.filters--sort__arrow-up:hover,
+.filters--sort__arrow-down:hover {
+	color: #000;
+}
+
+.filters--sort__arrow-up:active,
+.filters--sort__arrow-down:active {
+	color: #81b3d2;
+}
+
+.filters--sort__arrow-up:focus,
+.filters--sort__arrow-down:focus {
+	outline: none;
+}
+
+.sort--state__active {
+	color: #81b3d2;
+}
+
+.sort--state__active a {
+	color: #81b3d2; 
+	text-decoration: none;
+}
+
+/* ---- ---- ---- карточки ---- ---- ---- */
 
 .catalog--item {
-  display: flex;
-  padding: 30px 0 25px; 
+	display: flex;
+	padding: 30px 70px 25px; 
+	border-bottom: 1px solid #e5e5e5;
 }
 
 .catalog--item__image {
-  width: 135px;
-  margin-right: 30px;
+	width: 135px;
+	margin-right: 30px;
 }
 
 .catalog--item__rating {
-  margin-left: auto;
+	width: 120px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.catalog--item__description {
+	display: flex;
+	flex-wrap: wrap;
+	width: 750px;
+	padding-right: 25px;
+}
+
+.catalog--item__description h2 {
+	width: 100%;
+}
+
+.catalog--item__description h2 a:hover {
+	color: #81b3d2; 
+}
+
+.catalog--item__description h2 a:active {
+	color: #b2b2b2; 
+}
+
+.catalog--item__text-button {
+	display: flex;
+	flex-direction: column;
+	margin-right: 10px;
+}
+
+.catalog--item__category,
+.catalog--item__price  {
+	font-size: 14px;
+	line-height: 16px;
+	margin-bottom: 12px;
+}
+
+.catalog--item__stars {
+	font-size: 16px;
+	line-height: 18px;
+	text-align: right;
+	color: #81b3d2;
+}
+
+.catalog--item__rating-text {
+	background: #f2f2f2;
 }
