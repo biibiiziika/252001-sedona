@@ -11,7 +11,9 @@
 		<div class="wrapper--general">
 			<header class="wrapper--header">
 				<nav>
-					<img src="img/logo.png" alt="Логотип" class="main--navigation__logo">
+					<a href="index.html">
+						<img src="img/logo.png" alt="Логотип" class="main--navigation__logo">
+					</a>
 					<ul class="main--navigation">
 						<li><a href="info.html">Информация</a></li>
 						<li><a href="photo-video.html">фото и видео</a></li>
@@ -28,16 +30,16 @@
 							<legend>
 								<h3>Инфраструктура:</h3>
 							</legend>
-							<span>
-								<input type="checkbox" name="form--pool" id="form--pool" checked>
+							<span class="filters--input__option">
+								<input class="hidden filters--input__checkbox" type="checkbox" name="form--pool" id="form--pool" checked>
 								<label for="form--pool">Бассейн</label>
 							</span>
-							<span>
-								<input type="checkbox" name="form--parking" id="form--parking">
+							<span class="filters--input__option">
+								<input class="hidden filters--input__checkbox" type="checkbox" name="form--parking" id="form--parking">
 								<label for="form--parking">Парковка</label>
 							</span>
-							<span>
-								<input type="checkbox" name="form--wi-fi" id="form--wi-fi">
+							<span class="filters--input__option">
+								<input class="hidden filters--input__checkbox" type="checkbox" name="form--wi-fi" id="form--wi-fi">
 								<label for="form--wi-fi">WI-FI</label>	
 							</span>						
 						</fieldset>
@@ -45,30 +47,34 @@
 							<legend>
 								<h3>Тип жилья:</h3>
 							</legend>
-							<span>
-								<input type="checkbox" name="form--hotel" id="form--hotel" checked>
+							<span class="filters--input__option">
+								<input class="hidden filters--input__checkbox" type="checkbox" name="form--hotel" id="form--hotel" checked>
 								<label for="form--hotel">Гостиница</label>
 							</span>
-							<span>
-								<input type="checkbox" name="form--motel" id="form--motel" checked>
+							<span class="filters--input__option">
+								<input class="hidden filters--input__checkbox" type="checkbox" name="form--motel" id="form--motel" checked>
 								<label for="form--motel">Мотель</label>
 							</span>
-							<span>
-								<input type="checkbox" name="form--apartments" id="form--apartments" checked>
+							<span class="filters--input__option">
+								<input class="hidden filters--input__checkbox" type="checkbox" name="form--apartments" id="form--apartments" checked>
 								<label for="form--apartments">Апартаменты</label>
 							</span>
 						</fieldset>
 						<div class="filters--slider__price">
 							<fieldset>
-								<legend>
-									<h3>Стоимость в сутки(Р):</h3>
-								</legend>
-								<label for="form--price" hidden>Стоимость в сутки(Р):</label>
-								<div class="form--range__numbers">
-									<p>от 0</p>
-									<p>до 3000</p>
-								</div>
-								<input type=range id="form--price" min=0 max=3000 step=100>
+								<div class="filters--range">
+									<div class="filters--range__title">Стоимость в сутки (р):</div>
+									<div class="controls__price">
+										<label class="price__min">от <input type="text" name="price__min" value="0"></label>
+										<label class="price__max">до <input type="text" name="price__max" value="3000"></label>
+									</div>
+									<div class="controls__range">
+										<div class="controls__scale">
+											<div class="controls__bar"></div>
+										</div>
+									<div class="toggle__range toggle__range-min"></div>
+									<div class="toggle__range toggle__range-max"></div>
+									</div>
 							</fieldset>
 							<button class="button button__meduim button__ghost" type="submit">Показать</button>
 						</div>
